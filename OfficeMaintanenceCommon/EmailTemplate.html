@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left; /* Align the content within the container */
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div id="email-container">
+        <h2>Welcome to Our Platform!</h2>
+        <p>Hello {Username},</p>
+        <p>Your account has been created successfully.</p>
+        <p>Here are your login details:</p>
+        <ul>
+            <li><strong>Username:</strong> {Username}</li>
+            <li><strong>Password:</strong> {Password}</li>
+        </ul>
+        <p>Thank you for using our services.</p>
+        <p>Best regards,<br>Office Management Team</p>
+    </div>
+</body>
+</html>
